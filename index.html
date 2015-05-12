@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>World IA Day 2016 Call for Cities</title>
+        <style>
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        p, ul, ol, li {
+            margin: 0 0 1em 0;
+        }
+        h1, h2 {
+            margin: 32px 0 16px 0;
+            margin: 2rem 0 1rem 0;
+            color: #00AEEF;
+            font-size: 24px;
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: #00AEEF;
+            text-decoration: underline;
+        }
+        /*a:hover {
+            color: #0097cf;
+        }*/
+        a.button {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #FF0099;
+            padding: .5em 1em;
+            border-radius: .2em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        /*a.button:hover {
+            background-color: #e50089;
+        }*/
+
+        p.cta {
+            text-align: center;
+            margin-top: 2em;
+        }
+        p.lede {
+            font-size: 1.2em;
+        }
+
+        dl {
+            margin-top: 1em;
+        }
+        dt {
+            color: #FF0099;
+            font-weight: bold;
+        }
+        dd {
+            padding-bottom: 1em;
+            margin-left: 0;
+        }
+
+        section {
+            margin: 2em 0;
+            padding-bottom: 2em;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .hero {
+            text-align: center;
+            line-height: 1.3;
+            border-bottom: 1px solid #999;
+            margin-top: .5em;
+        }
+        .hero .logo-main {
+            max-width: 60%;
+        }
+        .hero h1 {
+            margin-top: .5em;
+        }
+        .cta-primary {
+            line-height: 1.1;
+            margin: 1em 0;
+        }
+
+        ol {
+            margin-top: 1em;
+            padding: 0;
+            list-style:none;
+            counter-reset: ol-counter;
+        }
+        ol>li:before {
+            display: block;
+            float: left;
+            margin-left: -2.6em;
+            content: counter(ol-counter);
+            counter-increment: ol-counter;
+            color: white;
+            font-weight: bold;
+            background-color: #FF0099;
+            text-align: center;
+            width: 1.6em;
+            height: 1.6em;
+            line-height: 1.6em;
+            border-radius: 1.6em;
+        }
+        ol>li {
+            padding-left: 2.6em;
+        }
+
+        ul {
+            margin-top: 1em;
+            list-style: disc;
+            padding-left: 1.2em;
+        }
+
+        li ol, li ul {
+            margin-top: .5em;
+        }
+        li li {
+            margin-bottom: .5em;
+        }
+
+        .unstyled-list {
+            list-style: none;
+            padding: 0;
+        }
+        .unstyled-list li {
+            margin-bottom: .5em;
+        }
+
+        .inline-list {
+            list-style: none;
+            padding: 0;
+        }
+        .inline-list li {
+            display: inline-block;
+            margin-right: 1em;
+        }
+
+        blockquote {
+            font-size: 1.25em;
+            font-style: italic;
+            color: #888;
+            line-height: 1.3;
+            margin: 0 1em;
+            padding: 0;
+            position: relative;
+        }
+        blockquote:before {
+            content: '“';
+            font-size: 7em;
+            color: #ddd;
+            position: absolute;
+            left: -.3em;
+            top: -.3em;
+            z-index: -1;
+        }
+        blockquote cite {
+            margin: .5em 0 0 0;
+        }
+
+        .iai {
+            text-align: center;
+        }
+
+        footer {
+            font-size: .75em;
+            position: relative;
+            top: -33px;
+            top: calc(-2rem - 1px);
+            border-top: 1px solid #999;
+            padding-top: 1em;
+            text-align: center;
+        }
+        footer .iai {
+            margin-top: 3em;
+        }
+        .iai-logo {
+            vertical-align: middle;
+            margin-right: 1em;
+        }
+
+        @media screen and (min-width: 400px) {
+            dl {
+                display:table;
+            }
+            dt {
+                display: table-cell;
+                text-align: right;
+                width: 7em;
+                padding-right: 1em;
+            }
+            dd {
+                display: table-cell;
+            }
+
+            h1 {
+                font-size: 36px;
+                font-size: 2.25rem;
+            }
+            .hero {
+                font-size: 1.5em;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .content-with-sidebar {
+                width: 65%;
+                float: left;
+            }
+            .sidebar {
+                width: 30%;
+                float: right;
+                margin-top: 2em; /* lines up headings */
+            }
+            .sidebar section {
+                margin: 0 0 3em;
+                padding: 0;
+                border: none;
+            }
+            .sidebar blockquote {
+                margin: 0;
+            }
+            .sidebar .iai {
+                text-align: left;
+            }
+            footer {
+                clear: both;
+            }
+            footer ul {
+                margin: 0;
+            }
+            footer .footer-nav {
+                width: 40%;
+                float: left;
+                text-align: left;
+            }
+            footer .copyright {
+                width: 40%;
+                float: left;
+                text-align: right;
+            }
+            footer .contact {
+                width: 20%;
+                float: left;
+                text-align: center;
+            }
+            footer:after {
+                content: ' ';
+                display: block;
+                clear: both;
+                line-height: 0;
+            }
+        }
+
+        /* grayscale, high-contrast version */
+        .bw h1, .bw h2 {
+            color: #333;
+        }
+        .bw a {
+            color: #333;
+        }
+        .bw a.button {
+            background-color: #333;
+            color: white;
+        }
+        .bw dt {
+            color: #333;
+        }
+        .bw ol>li:before {
+            background-color: #333;
+        }
+
+        .magenta h1, .magenta h2 {
+            color: #FF0099;
+        }
+        .magenta a {
+            color: #333;
+        }
+        .magenta a.button {
+            background-color: #333;
+            color: white;
+        }
+        .magenta .hero a.button {
+            background-color: #FF0099;
+        }
+        .magenta dt {
+            color: #333;
+        }
+        .magenta ol>li:before {
+            background-color: #333;
+        }
+        .magenta .sidebar h2,
+        .magenta .sidebar a {
+            color: #333;
+        }
+
+        .contrast h1, .contrast h2 {
+            color: #006c93;
+        }
+        .contrast a {
+            color: #006c93;
+        }
+        .contrast a.button {
+            background-color: #df0086;
+            color: white;
+        }
+        .contrast dt {
+            color: #df0086;
+        }
+        .contrast ol>li:before {
+            background-color: #df0086;
+        }
+        .contrast .sidebar h2,
+        .contrast .sidebar a {
+            color: #333;
+        }
+        </style>
+    </head>
+    <body>
+        <section class="hero">
+            <img class="logo-main" src="wiad-emblem.png" alt="logo" />
+            <h1>World Information Architecture Day is turning five!</h1>
+            <p>We’re excited to announce that our Call for Cities is now open. Celebrate information architecture in your city, this February 20th, 2016.</p>
+            <a class="button cta-primary" href="https://docs.google.com/a/davidpetersimon.com/forms/d/1vvBQBC4U8jqBjCqWz13k6hB_nEfBRkyU_9F0MbaANII/viewform">Submit an application<br>for your city</a>
+        </section>
+
+        <div class="content-with-sidebar">
+            <section id="about-ia-day">
+                <h2>About World Information Architecture Day</h2>
+                <p class="lede">
+                    <strong>World IA Day is all about bringing the global Information Architecture community together.</strong>
+                    <br>
+                    Each year, we foster links within local networks and on a global scale by hosting a one-day, international conference specifically focused on IA.
+                </p>
+                <p>We champion the sharing of ideas, information, and research. And, each year, we encourage making our events accessible to all.</p>
+                <p>Come February 20th, 2016, we’ll be celebrating our fifth annual World IA Day in many cities across the globe. It's a fun day to learn from world-class IA minds, network with people passionate about IA, and showcase your new IA-related ideas. It's also a fantastic opportunity to have talks and content tailored specifically to your local community and in your local language.</p>
+                <p>Sound good? We hope your city host World IA Day in your city. If you have strong leadership skills and are excited to tailor World IA Day for your community, big or small, submit your application by June 20, 2015.</p>
+                <p class="cta"><a class="button" href="https://docs.google.com/a/davidpetersimon.com/forms/d/1vvBQBC4U8jqBjCqWz13k6hB_nEfBRkyU_9F0MbaANII/viewform">Submit an application for your city</a></p>
+            </section>
+
+            <section id="running-ia-day">
+                <h2>The basics of running your local World IA Day</h2>
+                <p>We believe that community starts with you. You begin running your own event shortly after you apply. Each year it’s a bit different, but generally we recommend it goes a little something like this…</p>
+                <ol>
+                    <li><strong>You build a local team:</strong> You start building a team by connecting with a few folks in your community who are interested in filling out the call for cities proposal with you. The IAI reviews all submissions and notifies the cities of whether or not they are accepted. Once accepted, you can grow your team and plan your event with the support of the IAI global leaders.</li>
+                    <li><strong>You check in with global.</strong> The IAI global team will check in with you regularly to make sure you’re getting the support you need. We will let you know what other local leaders are doing across the globe and help you problem-solve any issues that arise. We’ll provide guidelines on when and how things could be done to help you if you’re new to event planning.</li>
+                    <li><strong>You manage your own event logistics.</strong> While we don’t mandate event management in a certain way, we know a general planning schedule might look something like this:
+                        <dl>
+                            <div class="di">
+                                <dt>July</dt>
+                                <dd>Recruit your volunteer team</dd>
+                            </div>
+                            <div class="di">
+                                <dt>August</dt>
+                                <dd>Identify sponsors and speakers from your community</dd>
+                            </div>
+                            <div class="di">
+                                <dt>September</dt>
+                                <dd>Determine venue &amp; audio/visual needs</dd>
+                            </div>
+                            <div class="di">
+                                <dt>October</dt>
+                                <dd>Publish final details on the World IA Day website</dd>
+                            </div>
+                            <div class="di">
+                                <dt>November</dt>
+                                <dd>Market the event to your community</dd>
+                            </div>
+                            <div class="di">
+                                <dt>December</dt>
+                                <dd>Design the day-of experience for your event</dd>
+                            </div>
+                            <div class="di">
+                                <dt>January</dt>
+                                <dd>Open registration and finalize day-of details</dd>
+                            </div>
+                        </dl>
+                    </li>
+                    <li><strong>You host your event!</strong> On February 20th, 2016, you’ll host your very own World IA Day - the format and content is up to you. The day can be filled with talks, roundtable chats, workshops, or something we haven’t even thought of yet. The only thing that we ask is that you keep your event accessible to all in your community and ours. The IAI global team will help promote your tweets, live streams, and video uploads as your event takes place. The world will be waiting, eager to watch from home or from one of the other World IA Day locations.</li>
+                </ol>
+            </section>
+
+            <section id="expectations">
+                <h2>What do we expect from participating cities?</h2>
+                <p>The IAI global team has a few requirements to make sure that all World IA Day events are connected and successful:</p>
+                <ol>
+                    <li>Accessible for any attendee with a desire to participate</li>
+                    <li>Commitment to pursuing local sponsors to cover event costs</li>
+                    <li>Promotion of World IA Day as an IAI event</li>
+                    <li>Promotion of global sponsors before and during the event</li>
+                    <li>The rights for IAI to publish your event content</li>
+                    <li>Commitment to providing the following post-event:
+                        <ul>
+                            <li>Post-event survey</li>
+                            <li>Attendee numbers &amp; data</li>
+                            <li>Itemized budget</li>
+                            <li>Any overage dollars donated to IAI</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>In exchange for your hard-work and due diligence, we extend our offer of support&mdash;be it finance, strategy, or network-related.</p>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <section>
+                <blockquote>
+                    <p>Last year, we (a few colleagues and I) decided that we would love to host World IA Day in Kent, Ohio. We were very excited when we were chosen as one of the cities for 2015! And then, we realized, oh my, now we have to plan this!</p>
+                    <p>The experience couldn't have been better. I was very concerned that I wouldn't be doing something correctly, but the amount of support from the IA Institute was unbelievable. Any questions or concerns I had were immediately answered, and any help I needed was given quickly. The day went unbelievably well, and we are happy to be answering the Call for Cities again in 2016 in the hopes of hosting World IA Day again!</p>
+                    <cite>Carrianne Tuckley, Kent, Ohio, 2015</cite>
+                </blockquote>
+            </section>
+            <section>
+                <p class="iai">
+                    <a href="http://iainstitute.org/"><img class="iai-logo" src="web-badge-2012.png" alt="IA Institute" /></a><br/>
+                    <span class="iai-text">World IA Day is completely volunteer-run, with operational support from the Information Architecture Institute.</span>
+                </p>
+            </section>
+        </aside>
+
+        <footer>
+            <nav class="footer-nav">
+                <ul class="inline-list">
+                    <li><a href="mailto:info@worldiaday.org">Contact</a></li>
+                    <li><a href="http://www.iainstitute.org/en/about/privacy_policy.php">Privacy Policy</a></li>
+                    <li><a href="http://2015.worldiaday.org/code-conduct/">Code of Conduct</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <ul class="inline-list">
+                    <li><a href="https://twitter.com/WorldIADay"><img src="twitter.png" alt="Twitter" /></a></li>
+                    <li><a href="mailto:info@worldiaday.org"><img src="email.png" alt="Email" /></a></li>
+                </ul>
+            </div>
+            <p class="copyright">&copy; 2016 Information Architecture Institute</p>
+        </footer>
+    </body>
+</html>
