@@ -13,6 +13,7 @@
 
         img {
             max-width: 100%;
+            border: none;
         }
 
         body {
@@ -330,6 +331,25 @@
             color: #333;
         }
         </style>
+        <!--[if lt IE 9]>
+        <script src="html5shiv.min.js"></script>
+        <style>
+        .inline-list li {
+            display: inline;
+        }
+        ol {
+            list-style: decimal;
+            padding-left: 1.5em;
+        }
+        ol>li:before {
+            display: none;
+            margin-left: 0;
+        }
+        ol>li {
+            padding-left: 0;
+        }
+        </style>
+        <![endif]-->
     </head>
     <body>
         <section class="hero">
