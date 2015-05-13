@@ -35,19 +35,20 @@
         h1, h2 {
             margin: 32px 0 16px 0;
             margin: 2rem 0 1rem 0;
-            color: #00AEEF;
+            color: #111;
             font-size: 24px;
             font-size: 1.5rem;
         }
 
         a {
-            color: #00AEEF;
+            color: #333;
             text-decoration: underline;
         }
         /*a:hover {
             color: #0097cf;
         }*/
         a.button {
+            font-size: 1.25em;
             color: white;
             font-weight: bold;
             text-decoration: none;
@@ -73,7 +74,6 @@
             margin-top: 1em;
         }
         dt {
-            color: #FF0099;
             font-weight: bold;
         }
         dd {
@@ -118,7 +118,7 @@
             counter-increment: ol-counter;
             color: white;
             font-weight: bold;
-            background-color: #FF0099;
+            background-color: #333;
             text-align: center;
             width: 1.6em;
             height: 1.6em;
@@ -165,6 +165,8 @@
         }
         .photo-list {
             margin-bottom: 0;
+            font-size: .75em;
+            font-style: italic;
         }
         .photo-list li {
             width: 31.624%; /* 185/585 */
@@ -180,10 +182,8 @@
         }
 
         blockquote {
-            font-size: 1.25em;
             font-style: italic;
-            color: #888;
-            line-height: 1.3;
+            color: #666;
             margin: 0 1em;
             padding: 0;
             position: relative;
@@ -193,22 +193,14 @@
             font-size: 7em;
             color: #ddd;
             position: absolute;
-            left: -.3em;
-            top: -.3em;
+            left: -.45em;
+            top: -.4em;
             z-index: -1;
         }
         blockquote cite {
             margin: .5em 0 0 0;
             display: block;
             text-align: right;
-        }
-
-        .iai {
-            text-align: center;
-        }
-        .iai-logo {
-            margin: 0 0 .5em;
-            vertical-align: middle;
         }
 
         footer {
@@ -256,7 +248,7 @@
                 margin: 0 auto;
             }
             .hero .content {
-                width: 30%;
+                width: 35%;
                 background-color: white;
                 padding: 1em;
             }
@@ -312,69 +304,6 @@
                 line-height: 0;
             }
         }
-
-        /* grayscale, high-contrast version */
-        .bw h1, .bw h2 {
-            color: #333;
-        }
-        .bw a {
-            color: #333;
-        }
-        .bw a.button {
-            background-color: #333;
-            color: white;
-        }
-        .bw dt {
-            color: #333;
-        }
-        .bw ol>li:before {
-            background-color: #333;
-        }
-
-        .magenta h1, .magenta h2 {
-            color: #FF0099;
-        }
-        .magenta a {
-            color: #333;
-        }
-        .magenta a.button {
-            background-color: #333;
-            color: white;
-        }
-        .magenta .hero a.button {
-            background-color: #FF0099;
-        }
-        .magenta dt {
-            color: #333;
-        }
-        .magenta ol>li:before {
-            background-color: #333;
-        }
-        .magenta .sidebar h2,
-        .magenta .sidebar a {
-            color: #333;
-        }
-
-        .contrast h1, .contrast h2 {
-            color: #006c93;
-        }
-        .contrast a {
-            color: #006c93;
-        }
-        .contrast a.button {
-            background-color: #df0086;
-            color: white;
-        }
-        .contrast dt {
-            color: #df0086;
-        }
-        .contrast ol>li:before {
-            background-color: #df0086;
-        }
-        .contrast .sidebar h2,
-        .contrast .sidebar a {
-            color: #333;
-        }
         </style>
         <!--[if lt IE 9]>
         <script src="html5shiv.min.js"></script>
@@ -410,7 +339,7 @@
         <section class="hero">
             <div class="content-wrapper">
                 <div class="content">
-                    <img class="logo-main" src="wiad-emblem.png" alt="logo" />
+                    <img class="logo-main" src="wiad-emblem.png" alt="World Information Architecture Day" />
                     <h1>World Information Architecture Day is turning five!</h1>
                     <p>We’re excited to announce that our Call for Cities is now open. Celebrate information architecture in your city, this February 20th, 2016.</p>
                     <a class="button cta-primary" href="https://docs.google.com/a/davidpetersimon.com/forms/d/1vvBQBC4U8jqBjCqWz13k6hB_nEfBRkyU_9F0MbaANII/viewform">Submit an application<br>for your city
@@ -423,12 +352,7 @@
             <div class="content-with-sidebar">
                 <section id="about-ia-day">
                     <h2>About World Information Architecture Day</h2>
-                    <p class="lede">
-                        <strong>World IA Day is all about bringing the global Information Architecture community together.</strong>
-                        <br>
-                        Each year, we foster links within local networks and on a global scale by hosting a one-day, international conference specifically focused on IA.
-                    </p>
-                    <p>We champion the sharing of ideas, information, and research. And, each year, we encourage making our events accessible to all.</p>
+                    <p class="lede">World IA Day is an accessible one-day conference aimed at bringing the Information Architecture community together.</p>
                     <p>Come February 20th, 2016, we’ll be celebrating our fifth annual World IA Day in many cities across the globe. It's a fun day to learn from world-class IA minds, network with people passionate about IA, and showcase your new IA-related ideas. It's also a fantastic opportunity to have talks and content tailored specifically to your local community and in your local language.</p>
                     <p>Sound good? We hope your city host World IA Day in your city. If you have strong leadership skills and are excited to tailor World IA Day for your community, big or small, submit your application by June 20, 2015.</p>
                     <p class="cta"><a class="button" href="https://docs.google.com/a/davidpetersimon.com/forms/d/1vvBQBC4U8jqBjCqWz13k6hB_nEfBRkyU_9F0MbaANII/viewform">Submit an application for your city</a></p>
@@ -436,18 +360,19 @@
 
                 <section class="photo-section">
                     <ul class="inline-list photo-list">
-                        <li><a href="photos/WIAD12-Malmo-FredrikOhlin2.full.jpg"><img src="photos/WIAD12-Malmo-FredrikOhlin2.jpg" alt="World IA Day 2012 Molmo" /></a></li><!-- no gap
-                        --><li><a href="photos/WIAD13-Tokyo-AtsushiHASEGAWA11.full.jpg"><img src="photos/WIAD13-Tokyo-AtsushiHASEGAWA11.jpg" alt="World IA Day 2013 Tokyo" /></a></li><!-- no gap
-                        --><li><a href="photos/WIAD14-DC-WIADDC-2.full.jpg"><img src="photos/WIAD14-DC-WIADDC-2.jpg" alt="World IA Day 2014 Washington D.C." /></a></li>
+                        <li><a href="photos/WIAD12-Malmo-FredrikOhlin2.full.jpg"><img src="photos/WIAD12-Malmo-FredrikOhlin2.jpg" alt="World IA Day 2012 Molmo" /></a><br /><a href="https://www.flickr.com/photos/fohlin/">Fredrik Ohlin</a></li><!-- no gap
+                        --><li><a href="photos/WIAD13-Tokyo-AtsushiHASEGAWA11.full.jpg"><img src="photos/WIAD13-Tokyo-AtsushiHASEGAWA11.jpg" alt="World IA Day 2013 Tokyo" /></a><br /><a href="https://www.flickr.com/photos/ahaseg/">Atsushi HASEGAWA</a></li><!-- no gap
+                        --><li><a href="photos/WIAD14-DC-WIADDC-2.full.jpg"><img src="photos/WIAD14-DC-WIADDC-2.jpg" alt="World IA Day 2014 Washington D.C." /></a><br /><a href="https://www.flickr.com/photos/dwilliamhood/">WIAD DC</a></li>
                     </ul>
                 </section>
 
                 <section id="running-ia-day">
                     <h2>The basics of running your local World IA Day</h2>
-                    <p>We believe that community starts with you. You begin running your own event shortly after you apply. Each year it’s a bit different, but generally we recommend it goes a little something like this…</p>
+                    <p>We believe local leadership and autonomy in decision-making is key to successful, culturally relevant events.</p>
+                    <p>We recommend you start thinking about the operations of your local event shortly after you apply. Each year, organizers run it a bit differently, but generally we see successful event timelines run something like this…</p>
                     <ol>
-                        <li><strong>You build a local team:</strong> You start building a team by connecting with a few folks in your community who are interested in filling out the call for cities proposal with you. The IAI reviews all submissions and notifies the cities of whether or not they are accepted. Once accepted, you can grow your team and plan your event with the support of the IAI global leaders.</li>
-                        <li><strong>You check in with global.</strong> The IAI global team will check in with you regularly to make sure you’re getting the support you need. We will let you know what other local leaders are doing across the globe and help you problem-solve any issues that arise. We’ll provide guidelines on when and how things could be done to help you if you’re new to event planning.</li>
+                        <li><strong>Build a local team:</strong> You start building a team by connecting with a few folks in your community who are interested in filling out the call for cities proposal with you. The Information Architecture Institute reviews all submissions and notifies the cities of whether or not they are accepted. Once accepted, you can grow your team and plan your event with the support of the Information Architecture Institute global leaders.</li>
+                        <li><strong>You check in with global.</strong> The Information Architecture Institute global team will check in with you regularly to make sure you’re getting the support you need. We will let you know what other local leaders are doing across the globe and help you problem-solve any issues that arise. We’ll provide guidelines on when and how things could be done to help you if you’re new to event planning.</li>
                         <li><strong>You manage your own event logistics.</strong> While we don’t mandate event management in a certain way, we know a general planning schedule might look something like this:
                             <dl>
                                 <div class="di">
@@ -480,56 +405,58 @@
                                 </div>
                             </dl>
                         </li>
-                        <li><strong>You host your event!</strong> On February 20th, 2016, you’ll host your very own World IA Day - the format and content is up to you. The day can be filled with talks, roundtable chats, workshops, or something we haven’t even thought of yet. The only thing that we ask is that you keep your event accessible to all in your community and ours. The IAI global team will help promote your tweets, live streams, and video uploads as your event takes place. The world will be waiting, eager to watch from home or from one of the other World IA Day locations.</li>
+                        <li><strong>You host your event!</strong> On February 20th, 2016, you’ll host your very own World IA Day - the format and content is up to you. The day can be filled with talks, roundtable chats, workshops, or something we haven’t even thought of yet. The only thing that we ask is that you keep your event accessible to all in your community and ours. The Information Architecture Institute global team will help promote your tweets, live streams, and video uploads as your event takes place.</li>
                     </ol>
+                    <p>At each step, we will provide advice, templates, toolkits, and any other planning tools you request to make sure that you're well equipped to run your event.</p>
                 </section>
 
                 <section class="photo-section">
                     <ul class="inline-list photo-list">
-                        <li><a href="photos/WIAD15-AnnArbor-DWilliamHood5.full.jpg"><img src="photos/WIAD15-AnnArbor-DWilliamHood5.jpg" alt="World IA Day 2015 Ann Arbor" /></a></li><!-- no gap
-                        --><li><a href="photos/WIAD13-Tokyo-AtsushiHASEGAWA7.full.jpg"><img src="photos/WIAD13-Tokyo-AtsushiHASEGAWA7.jpg" alt="World IA Day 2013 Tokyo" /></a></li><!-- no gap
-                        --><li><a href="photos/WIAD13-Tokyo-AtsushiHASEGAWA13.full.jpg"><img src="photos/WIAD13-Tokyo-AtsushiHASEGAWA13.jpg" alt="World IA Day 2013 Tokyo" /></a></li>
+                        <li><a href="photos/WIAD15-AnnArbor-DWilliamHood5.full.jpg"><img src="photos/WIAD15-AnnArbor-DWilliamHood5.jpg" alt="World IA Day 2015 Ann Arbor" /></a><a href="https://www.flickr.com/photos/dwilliamhood/">D William Hood</a></li><!-- no gap
+                        --><li><a href="photos/WIAD15-AnnArbor-DWilliamHood10.full.jpg"><img src="photos/WIAD15-AnnArbor-DWilliamHood10.jpg" alt="World IA Day 2015 Ann Arbor" /></a><a href="https://www.flickr.com/photos/dwilliamhood/">D William Hood</a></li><!-- no gap
+                        --><li><a href="photos/WIAD13-Tokyo-AtsushiHASEGAWA13.full.jpg"><img src="photos/WIAD13-Tokyo-AtsushiHASEGAWA13.jpg" alt="World IA Day 2013 Tokyo" /></a><a href="https://www.flickr.com/photos/ahaseg/">Atsushi HASEGAWA</a></li>
                     </ul>
                 </section>
 
                 <section id="expectations">
-                    <h2>What do we expect from participating cities?</h2>
-                    <p>The IAI global team has a few requirements to make sure that all World IA Day events are connected and successful:</p>
+                    <h2>Conditions for running your own event</h2>
+                    <p>The Information Architecture Institute global team has a few conditions we hope applying cities will abide by to make sure that all World IA Day events are connected and successful. The following are a set of guidelines that we hope you will abide by:</p>
                     <ol>
                         <li>Accessible for any attendee with a desire to participate</li>
                         <li>Commitment to pursuing local sponsors to cover event costs</li>
-                        <li>Promotion of World IA Day as an IAI event</li>
+                        <li>Promotion of World IA Day as an Information Architecture Institute event</li>
                         <li>Promotion of global sponsors before and during the event</li>
-                        <li>The rights for IAI to publish your event content</li>
+                        <li>The rights for Information Architecture Institute to publish your event content</li>
                         <li>Commitment to providing the following post-event:
                             <ul>
                                 <li>Post-event survey</li>
                                 <li>Attendee numbers &amp; data</li>
                                 <li>Itemized budget</li>
-                                <li>Any overage dollars donated to IAI</li>
+                                <li>Any overage dollars donated to Information Architecture Institute</li>
                             </ul>
                         </li>
                     </ol>
-                    <p>In exchange for your hard-work and due diligence, we extend our offer of support&mdash;be it finance, strategy, or network-related.</p>
+                    <p>As always, World IA Day is committed to being a welcoming environment. We strongly promote the inclusion of all people, regardless of gender, race, economic standing, or social background. By signing up to host World IA Day, we hope you agree to maintain and support our conference to this standard.</p>
+                    <p class="cta"><a class="button" href="https://docs.google.com/a/davidpetersimon.com/forms/d/1vvBQBC4U8jqBjCqWz13k6hB_nEfBRkyU_9F0MbaANII/viewform">Submit now!</a></p>
+                </section>
+
+                <section>
+                    <h2>About the Organizer</h2>
+                    <p><a href="http://iainstitute.org"><img src="iai-logo.png" alt="Information Architecture Institute" /></a></p>
+                    <p>World IA Day is completely volunteer-run, with operational support from the Information Architecture Institute.</p>
+                    <p>If you have any questions or concerns and would like to get in contact with the IAI global team, please feel free to reach out to us on our official e-mail at <a href="mailto:info@worldiaday.org">info@worldiaday.org</a>. You can also directly reach out to this year’s Global Executive Producer <a href="mailto:hello@davidpetersimon.com">David Peter Simon</a> or Events Director <a href="mailto:ecstrato@gmail.com">Erin Stratos</a>.</p>
                 </section>
             </div>
 
             <aside class="sidebar">
                 <section>
                     <blockquote>
-                        <p>Last year, we (a few colleagues and I) decided that we would love to host World IA Day in Kent, Ohio. We were very excited when we were chosen as one of the cities for 2015! And then, we realized, oh my, now we have to plan this!</p>
-                        <p>The experience couldn't have been better. I was very concerned that I wouldn't be doing something correctly, but the amount of support from the IA Institute was unbelievable. Any questions or concerns I had were immediately answered, and any help I needed was given quickly. The day went unbelievably well, and we are happy to be answering the Call for Cities again in 2016 in the hopes of hosting World IA Day again!&rdquo;</p>
+                        <p>The [organizing] experience couldn't have been better. I was very concerned that I wouldn't be doing something correctly, but the amount of support from the IA Institute was unbelievable. Any questions or concerns I had were immediately answered, and any help I needed was given quickly. The day went unbelievably well, and we are happy to be answering the Call for Cities again in 2016 in the hopes of hosting World IA Day again!&rdquo;</p>
                         <cite>
                             &ndash; Carrianne Tuckley<br />
                             Kent, Ohio, 2015
                         </cite>
                     </blockquote>
-                </section>
-                <section>
-                    <p class="iai">
-                        <a href="http://iainstitute.org/"><img class="iai-logo" src="web-badge-2012.png" alt="IA Institute" /></a><br/>
-                        <span class="iai-text">World IA Day is completely volunteer-run, with operational support from the Information Architecture Institute.</span>
-                    </p>
                 </section>
             </aside>
         </div>
