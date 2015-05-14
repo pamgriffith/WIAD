@@ -4,357 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>World IA Day 2016 Call for Cities</title>
-        <style>
-        * {
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        img {
-            max-width: 100%;
-            border: none;
-        }
-
-        html {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            padding: 1em;
-            margin: 0;
-        }
-
-        p, ul, ol, li {
-            margin: 0 0 1em 0;
-        }
-        h1, h2 {
-            margin: 32px 0 16px 0;
-            margin: 2rem 0 1rem 0;
-            color: #111;
-            font-size: 24px;
-            font-size: 1.5rem;
-        }
-
-        a {
-            color: #333;
-            text-decoration: underline;
-        }
-        /*a:hover {
-            color: #0097cf;
-        }*/
-        a.button {
-            font-size: 1.25em;
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: #FF0099;
-            padding: .5em 1em;
-            border-radius: .2em;
-            display: inline-block;
-            vertical-align: middle;
-        }
-        /*a.button:hover {
-            background-color: #e50089;
-        }*/
-
-        p.cta {
-            text-align: center;
-            margin-top: 2em;
-        }
-        p.lede {
-            font-size: 1.2em;
-        }
-
-        dl {
-            margin-top: 1em;
-        }
-        dt {
-            font-weight: bold;
-        }
-        dd {
-            padding-bottom: 1em;
-            margin-left: 0;
-        }
-
-        section {
-            margin: 2em 0;
-            padding-bottom: 2em;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .hero {
-            text-align: center;
-            line-height: 1.3;
-            border-bottom: 1px solid #999;
-            margin-top: .5em;
-        }
-        .hero .logo-main {
-            max-width: 60%;
-        }
-        .hero h1 {
-            margin-top: .5em;
-        }
-        .cta-primary {
-            line-height: 1.1;
-            margin: 1em 0;
-        }
-
-        ol {
-            margin-top: 1em;
-            padding: 0;
-            list-style:none;
-            counter-reset: ol-counter;
-        }
-        ol>li:before {
-            display: block;
-            float: left;
-            margin-left: -2.6em;
-            content: counter(ol-counter);
-            counter-increment: ol-counter;
-            color: white;
-            font-weight: bold;
-            background-color: #333;
-            text-align: center;
-            width: 1.6em;
-            height: 1.6em;
-            line-height: 1.6em;
-            border-radius: 1.6em;
-        }
-        ol>li {
-            padding-left: 2.6em;
-        }
-
-        ul {
-            margin-top: 1em;
-            list-style: disc;
-            padding-left: 1.2em;
-        }
-
-        li ol, li ul {
-            margin-top: .5em;
-        }
-        li li {
-            margin-bottom: .5em;
-        }
-
-        .unstyled-list {
-            list-style: none;
-            padding: 0;
-        }
-        .unstyled-list li {
-            margin-bottom: .5em;
-        }
-
-        .inline-list {
-            list-style: none;
-            padding: 0;
-        }
-        .inline-list li {
-            display: inline-block;
-            margin-right: 1em;
-        }
-
-        .photo-section {
-            margin-top: -1em;
-            padding-bottom: 1em;
-        }
-        .photo-list {
-            margin-bottom: 0;
-            font-size: .75em;
-            font-style: italic;
-        }
-        .photo-list li {
-            width: 31.624%; /* 185/585 */
-            margin-right: 2.564%; /* remainder, split in 2 */
-            margin-bottom: 0;
-        }
-        .photo-list li:last-child {
-            margin-right: 0;
-        }
-        .photo-list img {
-            width: 100%;
-            vertical-align: middle;
-        }
-
-        blockquote {
-            font-style: italic;
-            color: #666;
-            margin: 0 1em;
-            padding: 0;
-            position: relative;
-        }
-        blockquote:before {
-            content: '“';
-            font-size: 7em;
-            color: #ddd;
-            position: absolute;
-            left: -.45em;
-            top: -.4em;
-            z-index: -1;
-        }
-        blockquote cite {
-            margin: .5em 0 0 0;
-            display: block;
-            text-align: right;
-        }
-
-        footer {
-            font-size: .75em;
-            position: relative;
-            top: -33px;
-            top: calc(-2rem - 1px);
-            border-top: 1px solid #999;
-            padding-top: 1em;
-            text-align: center;
-        }
-
-        .designer-attribution {
-            color: #777;
-            clear: both;
-            padding: 2em 0 0;
-            margin: 0;
-        }
-
-        @media screen and (min-width: 400px) {
-            dl {
-                display:table;
-            }
-            dt {
-                display: table-cell;
-                text-align: right;
-                width: 7em;
-                padding-right: 1em;
-            }
-            dd {
-                display: table-cell;
-            }
-        }
-
-        @media screen and (min-width: 800px) {
-            .main, footer {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-
-            .hero {
-                background-image: url('photos/WIAD15-AnnArbor-DWilliamHood9.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-bottom: none;
-                margin: -1em -1em 1em;
-                padding: 2em 1em;
-            }
-            .hero .content-wrapper {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-            .hero .content {
-                width: 35%;
-                background-color: white;
-                padding: 1em;
-            }
-            .hero h1 {
-                margin-top: 0;
-            }
-            .hero .logo-main {
-                margin-top: .5em;
-            }
-
-            .main:after {
-                content: ' ';
-                display: block;
-                clear: both;
-                line-height: 0;
-            }
-            .content-with-sidebar {
-                width: 65%;
-                float: left;
-            }
-            .sidebar {
-                width: 30%;
-                float: right;
-                margin-top: 2em; /* lines up headings */
-            }
-            .sidebar section {
-                margin: 0 0 3em;
-                padding: 0;
-                border: none;
-            }
-            .sidebar blockquote {
-                margin: 0;
-            }
-            footer {
-                clear: both;
-            }
-            footer ul {
-                margin: 0;
-            }
-            footer .footer-nav {
-                width: 40%;
-                float: left;
-                text-align: left;
-            }
-            footer .copyright {
-                width: 40%;
-                float: left;
-                text-align: right;
-            }
-            footer .contact {
-                width: 20%;
-                float: left;
-                text-align: center;
-            }
-            footer:after {
-                content: ' ';
-                display: block;
-                clear: both;
-                line-height: 0;
-            }
-        }
-        </style>
+        <link rel="stylesheet" href="assets/css/style.css" />
         <!--[if lt IE 9]>
-        <script src="html5shiv.min.js"></script>
-        <style>
-        .inline-list li {
-            display: inline;
-        }
-        .photo-section {
-            text-align: center;
-        }
-        .photo-list li {
-            width: auto;
-            margin-right: 1em;
-        }
-        .photo-list img {
-            width: auto;
-        }
-        ol {
-            list-style: decimal;
-            padding-left: 1.5em;
-        }
-        ol>li:before {
-            display: none;
-            margin-left: 0;
-        }
-        ol>li {
-            padding-left: 0;
-        }
-        </style>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <link rel="stylesheet" href="assets/css/IElt9.css" />
         <![endif]-->
     </head>
     <body>
         <section class="hero">
             <div class="content-wrapper">
                 <div class="content">
-                    <img class="logo-main" src="wiad-emblem.png" alt="World Information Architecture Day" />
+                    <img class="logo-main" src="assets/icons/wiad-emblem.png" alt="World Information Architecture Day" />
                     <h1>World Information Architecture Day is turning five!</h1>
-                    <p>We’re excited to announce that our Call for Cities is now open. Celebrate information architecture in your city, this February 20th, 2016.</p>
+                    <p>We’re excited to announce that our Call for Cities is now open. Celebrate information architecture in your city, this<br />February 20th, 2016.</p>
                     <a class="button cta-primary" href="https://docs.google.com/a/davidpetersimon.com/forms/d/1vvBQBC4U8jqBjCqWz13k6hB_nEfBRkyU_9F0MbaANII/viewform">Submit an application<br>for your city
                     </a>
                 </div>
@@ -373,9 +35,9 @@
 
                 <section class="photo-section">
                     <ul class="inline-list photo-list">
-                        <li><a href="photos/WIAD12-Malmo-FredrikOhlin2.full.jpg"><img src="photos/WIAD12-Malmo-FredrikOhlin2.jpg" alt="World IA Day 2012 Molmo" /></a><br /><a href="https://www.flickr.com/photos/fohlin/">Fredrik Ohlin</a></li><!-- no gap
-                        --><li><a href="photos/WIAD13-Tokyo-AtsushiHASEGAWA11.full.jpg"><img src="photos/WIAD13-Tokyo-AtsushiHASEGAWA11.jpg" alt="World IA Day 2013 Tokyo" /></a><br /><a href="https://www.flickr.com/photos/ahaseg/">Atsushi HASEGAWA</a></li><!-- no gap
-                        --><li><a href="photos/WIAD14-DC-WIADDC-2.full.jpg"><img src="photos/WIAD14-DC-WIADDC-2.jpg" alt="World IA Day 2014 Washington D.C." /></a><br /><a href="https://www.flickr.com/photos/dwilliamhood/">WIAD DC</a></li>
+                        <li><a href="assets/photos/WIAD12-Malmo-FredrikOhlin2.full.jpg"><img src="assets/photos/WIAD12-Malmo-FredrikOhlin2.jpg" alt="World IA Day 2012 Molmo" /></a><br /><a href="https://www.flickr.com/photos/fohlin/">Fredrik Ohlin</a></li><!-- no gap
+                        --><li><a href="assets/photos/WIAD13-Tokyo-AtsushiHASEGAWA11.full.jpg"><img src="assets/photos/WIAD13-Tokyo-AtsushiHASEGAWA11.jpg" alt="World IA Day 2013 Tokyo" /></a><br /><a href="https://www.flickr.com/photos/ahaseg/">Atsushi HASEGAWA</a></li><!-- no gap
+                        --><li><a href="assets/photos/WIAD14-DC-WIADDC-2.full.jpg"><img src="assets/photos/WIAD14-DC-WIADDC-2.jpg" alt="World IA Day 2014 Washington D.C." /></a><br /><a href="https://www.flickr.com/photos/dwilliamhood/">WIAD DC</a></li>
                     </ul>
                 </section>
 
@@ -425,9 +87,9 @@
 
                 <section class="photo-section">
                     <ul class="inline-list photo-list">
-                        <li><a href="photos/WIAD15-AnnArbor-DWilliamHood5.full.jpg"><img src="photos/WIAD15-AnnArbor-DWilliamHood5.jpg" alt="World IA Day 2015 Ann Arbor" /></a><a href="https://www.flickr.com/photos/dwilliamhood/">D William Hood</a></li><!-- no gap
-                        --><li><a href="photos/WIAD15-AnnArbor-DWilliamHood10.full.jpg"><img src="photos/WIAD15-AnnArbor-DWilliamHood10.jpg" alt="World IA Day 2015 Ann Arbor" /></a><a href="https://www.flickr.com/photos/dwilliamhood/">D William Hood</a></li><!-- no gap
-                        --><li><a href="photos/WIAD13-Tokyo-AtsushiHASEGAWA13.full.jpg"><img src="photos/WIAD13-Tokyo-AtsushiHASEGAWA13.jpg" alt="World IA Day 2013 Tokyo" /></a><a href="https://www.flickr.com/photos/ahaseg/">Atsushi HASEGAWA</a></li>
+                        <li><a href="assets/photos/WIAD15-AnnArbor-DWilliamHood5.full.jpg"><img src="assets/photos/WIAD15-AnnArbor-DWilliamHood5.jpg" alt="World IA Day 2015 Ann Arbor" /></a><br /><a href="https://www.flickr.com/photos/dwilliamhood/">D William Hood</a></li><!-- no gap
+                        --><li><a href="assets/photos/WIAD15-AnnArbor-DWilliamHood10.full.jpg"><img src="assets/photos/WIAD15-AnnArbor-DWilliamHood10.jpg" alt="World IA Day 2015 Ann Arbor" /></a><br /><a href="https://www.flickr.com/photos/dwilliamhood/">D William Hood</a></li><!-- no gap
+                        --><li><a href="assets/photos/WIAD13-Tokyo-AtsushiHASEGAWA13.full.jpg"><img src="assets/photos/WIAD13-Tokyo-AtsushiHASEGAWA13.jpg" alt="World IA Day 2013 Tokyo" /></a><br /><a href="https://www.flickr.com/photos/ahaseg/">Atsushi HASEGAWA</a></li>
                     </ul>
                 </section>
 
@@ -455,7 +117,7 @@
 
                 <section>
                     <h2>About the Organizer</h2>
-                    <p><a href="http://iainstitute.org"><img src="iai-logo.png" alt="Information Architecture Institute" /></a></p>
+                    <p><a href="http://iainstitute.org"><img src="assets/icons/iai-logo.png" alt="Information Architecture Institute" /></a></p>
                     <p>World IA Day is completely volunteer-run, with operational support from the Information Architecture Institute.</p>
                     <p>If you have any questions or concerns and would like to get in contact with the IAI global team, please feel free to reach out to us on our official e-mail at <a href="mailto:info@worldiaday.org">info@worldiaday.org</a>. You can also directly reach out to this year’s Global Executive Producer <a href="mailto:hello@davidpetersimon.com">David Peter Simon</a> or Events Director <a href="mailto:ecstrato@gmail.com">Erin Stratos</a>.</p>
                 </section>
@@ -484,8 +146,8 @@
             </nav>
             <div class="contact">
                 <ul class="inline-list">
-                    <li><a href="https://twitter.com/WorldIADay"><img src="twitter.png" alt="Twitter" /></a></li>
-                    <li><a href="mailto:info@worldiaday.org"><img src="email.png" alt="Email" /></a></li>
+                    <li><a href="https://twitter.com/WorldIADay"><img src="assets/icons/twitter.png" alt="Twitter" /></a></li>
+                    <li><a href="mailto:info@worldiaday.org"><img src="assets/icons/email.png" alt="Email" /></a></li>
                 </ul>
             </div>
             <p class="copyright">&copy; 2016 Information Architecture Institute</p>
