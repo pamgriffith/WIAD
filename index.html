@@ -213,6 +213,13 @@
             text-align: center;
         }
 
+        .designer-attribution {
+            color: #777;
+            clear: both;
+            padding: 2em 0 0;
+            margin: 0;
+        }
+
         @media screen and (min-width: 400px) {
             dl {
                 display:table;
@@ -259,6 +266,12 @@
                 margin-top: .5em;
             }
 
+            .main:after {
+                content: ' ';
+                display: block;
+                clear: both;
+                line-height: 0;
+            }
             .content-with-sidebar {
                 width: 65%;
                 float: left;
@@ -476,6 +489,8 @@
                 </ul>
             </div>
             <p class="copyright">&copy; 2016 Information Architecture Institute</p>
+
+            <p class="designer-attribution">Visual design by <a href="http://pamgriffith.net">Pam Griffith</a>
         </footer>
     </body>
 </html>
