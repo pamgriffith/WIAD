@@ -32,3 +32,20 @@ ol>li:before {
 ol>li {
     padding-left: 0;
 }
+.contact img {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+.contact a {
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.contact .twitter {
+    background-image: url("../icons/twitter.png");
+}
+.contact .email {
+    background-image: url("../icons/email.png");
+}
