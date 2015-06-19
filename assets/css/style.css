@@ -109,21 +109,36 @@ dt {
     font-weight: bold;
 }
 dd {
-    padding-bottom: 1em;
     margin-left: 0;
 }
+dl .di {
+    padding-bottom: 1em;
+}
 @media screen and (min-width: 400px) {
-    dl {
+    dl.inline {
         display:table;
     }
-    dt {
+    dl.inline dt {
         display: table-cell;
         text-align: right;
         width: 7em;
         padding-right: 1em;
     }
-    dd {
+    dl.inline dd {
         display: table-cell;
+    }
+    dl.long {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 1em;
+        -webkit-column-gap: 1em;
+        column-gap: 1em;
+    }
+    dl.long .di {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 }
 
@@ -267,9 +282,16 @@ section {
         margin: 0 auto;
     }
     .hero .content {
-        width: 35%;
         background-color: white;
         padding: 1em 2em;
+    }
+    .hero .content.offset {
+        width: 35%;
+    }
+    .hero .content.center {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .hero h1 {
         margin-top: 0;
