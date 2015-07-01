@@ -135,67 +135,6 @@ dl .di {
     dl.inline dd {
         display: table-cell;
     }
-
-    dl.long .di {
-        width: 47.5%;
-        margin-right: 5%;
-        float: left;
-    }
-    dl.long .di:nth-child(2n) {
-        margin-right: 0;
-    }
-    dl.long .di:nth-child(2n+1) {
-        clear: left;
-    }
-    dl.long:after {
-        content: ' ';
-        display: block;
-        clear: both;
-        line-height: 0;
-    }
-}
-@media screen and (min-width: 800px) {
-    /* 3 columns in list if wide enough */
-    dl.long .di {
-        width: 30%;
-        margin-right: 5%;
-        float: left;
-    }
-    dl.long .di:nth-child(2n) {
-        margin-right: 5%;
-    }
-    dl.long .di:nth-child(2n+1) {
-        clear: none;
-    }
-    dl.long .di:nth-child(3n) {
-        margin-right: 0;
-    }
-    dl.long .di:nth-child(3n+1) {
-        clear: left;
-    }
-    /* 2 columns in list if narrower */
-    .col2 dl.long .di,
-    .content-with-sidebar dl.long .di {
-        width: 47.5%;
-        margin-right: 5%;
-        float: left;
-    }
-    .col2 dl.long .di:nth-child(3n),
-    .content-with-sidebar dl.long .di:nth-child(3n) {
-        margin-right: 5%;
-    }
-    .col2 dl.long .di:nth-child(3n+1),
-    .content-with-sidebar dl.long .di:nth-child(3n+1) {
-        clear: none;
-    }
-    .col2 dl.long .di:nth-child(2n),
-    .content-with-sidebar dl.long .di:nth-child(2n) {
-        margin-right: 0;
-    }
-    .col2 dl.long .di:nth-child(2n+1),
-    .content-with-sidebar dl.long .di:nth-child(2n+1) {
-        clear: left;
-    }
 }
 
 ol {
@@ -240,7 +179,7 @@ li li {
     list-style: none;
     padding: 0;
 }
-.unstyled-list li {
+.unstyled-list li, {
     margin-bottom: .5em;
 }
 
@@ -261,6 +200,94 @@ li li {
     clear: both;
     padding: 2em 0 0;
     margin: 0;
+}
+
+/* mult-column lists */
+ul.long {
+    list-style: none;
+    padding: 0;
+    margin-bottom: .5em;
+}
+@media screen and (min-width: 400px) {
+    dl.long .di,
+    ul.long li {
+        width: 47.5%;
+        margin-right: 5%;
+        float: left;
+    }
+    dl.long .di:nth-child(2n),
+    ul.long li:nth-child(2n) {
+        margin-right: 0;
+    }
+    dl.long .di:nth-child(2n+1),
+    ul.long li:nth-child(2n+1) {
+        clear: left;
+    }
+    dl.long:after,
+    ul.long:after {
+        content: ' ';
+        display: block;
+        clear: both;
+        line-height: 0;
+    }
+}
+@media screen and (min-width: 800px) {
+    /* 3 columns in list if wide enough */
+    dl.long .di,
+    ul.long li {
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+    }
+    dl.long .di:nth-child(2n),
+    ul.long li:nth-child(2n) {
+        margin-right: 5%;
+    }
+    dl.long .di:nth-child(2n+1),
+    ul.long li:nth-child(2n+1) {
+        clear: none;
+    }
+    dl.long .di:nth-child(3n),
+    ul.long li:nth-child(3n) {
+        margin-right: 0;
+    }
+    dl.long .di:nth-child(3n+1),
+    ul.long li:nth-child(3n+1) {
+        clear: left;
+    }
+    /* 2 columns in list if narrower */
+    .col2 dl.long .di,
+    .content-with-sidebar dl.long .di,
+    .col2 ul.long li,
+    .content-with-sidebar ul.long li {
+        width: 47.5%;
+        margin-right: 5%;
+        float: left;
+    }
+    .col2 dl.long .di:nth-child(3n),
+    .content-with-sidebar dl.long .di:nth-child(3n),
+    .col2 ul.long li:nth-child(3n),
+    .content-with-sidebar ul.long li:nth-child(3n) {
+        margin-right: 5%;
+    }
+    .col2 dl.long .di:nth-child(3n+1),
+    .content-with-sidebar dl.long .di:nth-child(3n+1),
+    .col2 ul.long li:nth-child(3n+1),
+    .content-with-sidebar ul.long li:nth-child(3n+1) {
+        clear: none;
+    }
+    .col2 dl.long .di:nth-child(2n),
+    .content-with-sidebar dl.long .di:nth-child(2n),
+    .col2 ul.long li:nth-child(2n),
+    .content-with-sidebar ul.long li:nth-child(2n) {
+        margin-right: 0;
+    }
+    .col2 dl.long .di:nth-child(2n+1),
+    .content-with-sidebar dl.long .di:nth-child(2n+1),
+    .col2 ul.long li:nth-child(2n+1),
+    .content-with-sidebar ul.long li:nth-child(2n+1) {
+        clear: left;
+    }
 }
 
 /* LAYOUT */
